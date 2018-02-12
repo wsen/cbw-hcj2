@@ -1,0 +1,36 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	color: #333;
+	background-color: #fff;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 20px; /* 1.5em; */
+	font-weight: bold
+}
+
+h2 {
+	font-size: 16px; /* 1.25em; */
+	font-weight: bold
+}
+
+p {
+	line-height: 1.5em;
+}
+
+a {
+	color: #aa0000;
+	text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+sup { font-size: 0.7em; }
+
+strong, b { font-weight: bold; }
+en, i { font-style: italic; }
