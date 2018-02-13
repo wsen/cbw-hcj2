@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>012_DOMhtml</title>
+		<meta charset="utf-8" />
+		<link href="./styles/global_style.css" type="text/css" rel="stylesheet" media="screen" />
+		<style>
+			
+		
+		</style>
+	</head>
+	
+	<body>
+		<h1>012_DOMhtml</h1>
+		<h2></h2>
+		<p onClick="alert(this.innerHTML.length)";>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+            erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+            consetetur sadipscing elitr, sed diam nonumy eirmod 
+            tempor invidunt ut labore et dolore magna aliquyam erat, 
+            sed diam voluptua. At vero eos et accusam et justo duo dolores 
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>ABSATZ 2:
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+                consetetur sadipscing elitr, sed diam nonumy eirmod 
+                tempor invidunt ut labore et dolore magna aliquyam erat, 
+                sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+                Lorem ipsum dolor sit amet.
+            </p>
+		<script>
+            var ausgabe = "";
+            ausgabe = "Absätze: " + document.getElementsByTagName("p").length;
+            ausgabe += "\nAnzahl der Zeichen im 2.Absatz: " +
+            document.getElementsByTagName("p")[1].innerHTML.length;
+            alert(ausgabe);
+
+
+            // alert(window.document.getElementsByTagName("p")[1]);
+            // alert(document.getElementsByTagName("p").length);
+
+        </script> 
+	</body>
+</html>

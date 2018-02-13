@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>08 Pseudoklassen</title>
+		<meta charset="utf-8" />
+		<link href="./styles/global_style.css" type="text/css" rel="stylesheet" media="screen" />
+		<style>
+			p:nth-child(3){ background-color: tomato;}
+
+			p:nth-of-type(3){ background-color: aqua;}
+
+			div:only-of-type {
+				color: red;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<h1>Überschrift</h1>
+		<h2>Überschrift 2</h2>
+		<p>Erster Absatz</p>
+		<hr />
+        <p>Zweiter Absatz</p>
+		<p>Dritter Absatz</p> <!-- p:nth-of-type(3) -->
+		<p>Vierter Absatz</p>
+		<div>Fünftes Element vom Typ div</div>
+    </body>			
+</html>

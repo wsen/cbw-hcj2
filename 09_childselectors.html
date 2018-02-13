@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>09_childselectors</title>
+		<meta charset="utf-8" />
+		<link href="./styles/global_style.css" type="text/css" rel="stylesheet" media="screen" />
+		<style>
+			a {
+                color: red;
+            }
+            p a {
+                font-weight: bold;
+            }
+            p > a {
+                font-weight: italic;
+            }		
+		</style>
+	</head>
+	
+	<body>
+        <a href="#">Link im Body</a>
+		<h1>09_childselectors</h1>
+        <h2></h2>
+		<p><a href="#">Link im Absatz</a> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+             erat, sed diam voluptua.
+            <span><a href="#">Link im SPAN</a></span> At vero eos et accusam et justo duo 
+             dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+             sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+             sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+		<script src="script/jquery-3.3.1.min.js"></script> 
+	</body>
+</html>
