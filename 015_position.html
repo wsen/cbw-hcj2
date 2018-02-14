@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>015_position</title>
+		<meta charset="utf-8" />
+		<link href="./styles/global_style.css" type="text/css" rel="stylesheet" media="screen" />
+		<style>
+            body { margin: 0; padding: 0, }
+            #d1 {
+                width: 650px;
+                height: 500px;
+                background-color: yellow;
+                margin-left: 100px;
+                position: static;
+            }
+            
+            #d1_innnen {
+                width: 250px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                /* margin-top: 20px;
+                margin-left: 40px; */
+                left: 500px;
+                right: 0px;
+                top: 20px;
+                z-index: 2;
+            }
+
+            #d2 {
+                width: 250px;
+                height: 100px;
+                background-color: blue;
+                position: absolute;
+                left: 650px;
+                top: 0px;
+                z-index: 1;
+            }
+
+            #d3 {
+                width: 250px;
+                height: 100px;
+                background-color: yellowgreen;
+                position: fixed;
+                left: 0px;
+                top: 150px;
+                z-index: 99;
+            } 
+		
+		</style>
+	</head>
+	
+	<body>
+		<!-- <h1>015_position</h1>
+		<h2></h2> -->
+        
+        <div id="d1">static
+            <div id="d1_innnen">
+                relative
+            </div>
+            
+        </div>
+        <div id="d2">absolut vodka
+        </div>
+
+        <div id="d3">fixed
+            </div>
+
+		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+		<script src="script/jquery-3.3.1.min.js"></script> 
+	</body>
+</html>

@@ -4,22 +4,59 @@ html {
 
 body {
 	color: #333;
-	background-color: #fff;
+	background: #fff url("../../media/images/nuraghen/nuraghe.jpg") no-repeat fixed top left;
+	/* background-color: #fff;  */
+	/* background-image: url("../../media/images/nuraghen/nuraghe.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed; */
+	/* background-position: 0px 0px; */
+	background-size: 100% auto;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 12px;	
+}
+
+#globo {
+	position: fixed;
+	right: 0;
+	top: 0;
 }
 
 h1 {
 	font-size: 20px; /* 1.5em; */
-	font-weight: bold
+	font-weight: bold;
+	background-color: #aa0000;
+	color: #fff;
+}
+
+h1:before {
+	content: "\25B8";
 }
 
 h2 {
 	font-size: 16px; /* 1.25em; */
-	font-weight: bold
+	font-weight: bold;
+	border-top: 1px solid #a00;
+	border-right: 24px solid #a00;
+	border-bottom: none;
+	border-left: none;
+	margin-top: 2em;
+	clear: both;
+}
+
+.links {
+	float: left;
+	margin-right: 1rem;
+	margin-bottom: 1.2rem;
+}
+
+.rechts {
+	float: right;
+	margin-left: 1rem;
+	margin-bottom: 1.2rem;
 }
 
 p {
+	/* margin-left: 227px; */
 	line-height: 1.5em;
 }
 
@@ -33,4 +70,20 @@ a:hover { text-decoration: underline; }
 sup { font-size: 0.7em; }
 
 strong, b { font-weight: bold; }
-en, i { font-style: italic; }
+em, i { font-style: italic; }
+
+p:first-of-type::first-letter {
+	font-weight: bold;
+	color: #a00;
+	font-size: xx-large;
+}
+
+#hervorgehoben {
+	margin-left: 227px;
+	padding: 0.25em;
+	/* margin-left: 2rem; geht nicht */
+	background-color: rgb(255,0,0,0.5);
+	border: 1px solid #a00;
+	width: 40%;
+}
+

@@ -24,6 +24,12 @@
                 content: "Das ist ein P Absatz: ";
                 margin-right: 5px;
             }
+
+            p::selection {
+                background-color: #000;
+                color: #fff;
+            }
+
             p a[href^='http']::after, p a[href^='ftp']::after {
                 content: url("../media/images/external_link.gif");
                 margin-left: 5px;
