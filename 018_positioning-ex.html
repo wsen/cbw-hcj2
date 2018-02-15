@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>018_positioning-ex</title>
+		<meta charset="utf-8" />
+		<link href="./styles/global_style.css" type="text/css" rel="stylesheet" media="screen" />
+		<style>
+            div {
+                width: 75px;
+                height: 75px;
+                background-color: red;
+                position: absolute;
+            }
+
+            /* div > div{
+                background-color: blue;
+                /* position: relative; 
+            } */
+
+            /* div#gross {
+
+            } besser das Nachfolgende - MEHR SPEZIFISCH */
+
+            div#gross > div { background-color: blue; }
+
+			div#gross {
+                width: 500px;
+                height: 500px;
+                margin-left: calc((100vw - 500px) / 2);
+                margin-top: calc((100vh - 500px) / 2);
+                border: 2px solid black;
+                
+            }
+
+            .obenlinks {
+                top: 0;
+                left: 0;
+            }
+
+            .obenrechts {
+                top: 0;
+                right: 0;
+            }
+
+            .untenlinks {
+                bottom: 0;
+                left: 0;
+            }
+
+            .untenrechts {
+                bottom: 0;
+                right: 0;
+            }
+
+		
+		</style>
+	</head>
+	
+	<body>
+        
+        <div id="gross"> 
+            <div class="obenlinks"></div>
+            <div class="obenrechts"></div>
+            <div class="untenlinks"></div>
+            <div class="untenrechts"></div>
+        </div>
+
+        <div class="obenlinks"></div>
+        <div class="obenrechts"></div>
+        <div class="untenlinks"></div>
+        <div class="untenrechts"></div>
+        
+	</body>
+</html>

@@ -4,19 +4,58 @@ html {
 
 body {
 	color: #333;
-	background: #fff url("../../media/images/nuraghen/nuraghe.jpg") no-repeat fixed top left;
+	
 	/* background-color: #fff;  */
 	/* background-image: url("../../media/images/nuraghen/nuraghe.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed; */
 	/* background-position: 0px 0px; */
-	background-size: 100% auto;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
 	font-size: 12px;	
+	min-width: 980px;
+	padding-top: 60px;
+
+}
+
+nav, main {
+    display: block;
+    border: 1px solid #333;
+}
+
+nav {
+    width: 18%;
+    float: left;    
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	/* background-image: url("../../media/images/nuraghen/square.gif");
+	//  -- jetzt in main --
+	background-repeat: no-repeat;
+	background-color: grey;
+	background-position: left center; */
+	background: url("../../media/images/nuraghen/square.gif") no-repeat  grey left center;
+	padding: 3px 0 3px 15px;
+	margin-bottom: 12px;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background-image: url("../../media/images/nuraghen/square_over.gif");
+}
+
+main {
+	width: 80%;
+	float: right;
+	/* margin-left: 20%; */
+	background: #fff url("../../media/images/nuraghen/nuraghe.jpg") no-repeat fixed top right;
+	background-size: 80% auto;
 }
 
 #globo {
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: 0;
 }
@@ -76,6 +115,10 @@ p:first-of-type::first-letter {
 	font-weight: bold;
 	color: #a00;
 	font-size: xx-large;
+}
+
+p:last-of-type {
+	min-height: 120px;
 }
 
 #hervorgehoben {
